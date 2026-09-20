@@ -1,0 +1,166 @@
+Credit Risk:
+    The risk that borrower fails to meet their financial obligations
+And this is the central problem this prooject is trying to analyze.
+
+DPD: Days past due
+    DPD tells us how late customer is on repayment 
+
+|   DPD | Bucket                      |
+| ----- | --------------------------- |
+|     0 | Current                     |
+|  1–30 | Early delinquency           |
+| 31–60 | Moderate delinquency        |
+| 61–90 | Severe delinquency          |
+|   90+ | Very severe / NPA territory |
+
+
+But how does the system know someone is risky?
+    We look for signals:
+    1. Payment delay
+    2. Repeated late payments
+    3. EMI Bounce
+    4. Increasing debt
+    5. Credit deterioration
+    6. Utilization
+    7. DPD migration
+
+Account-level vs exposure-level thinking:
+    10% of accounts are delinquent.
+
+    But suppose those 100 loans represent only:
+
+    ₹5 crore
+
+    out of a total portfolio of:
+
+    ₹500 crore
+
+    Then exposure-based delinquency is:
+
+    1%
+
+    Now reverse it.
+
+    Suppose only 20 loans are delinquent, but they represent:
+
+    ₹100 crore
+
+NPA = Non-Performing Asset:
+    It refers to assets that has stopped generating income for bank
+
+Roll-rate analysis
+    This is used to calculate how accounts have migrated between states of DPD.
+    This tells us whether the portfolio is curing or deteriorating.
+
+Delinquency
+    The borrower has failed to make a required payment on time.
+
+SMA — Special Mention Account:
+    SMA classifications identify loans showing stress before they become NPAs.
+
+Default:
+    The borrower has failed to meet a contractual obligation according to the defined default framework.
+    "Failed to meet a contractual obligation": Missed a scheduled payment, 
+    failed to maintain required collateral, or broke another promise agreed to in the contract.
+
+Cure:
+    The borrower became delinquent but returned to current status.
+
+Write-off:
+    A write-off is an accounting action that removes the value of an asset from a company's books because it is no longer collectable, usable, or recoverable.
+
+Segmentation:
+    Segmentation means dividing the loan portfolio into meaningful groups so that we can compare risk between them.
+
+Average Ticket Size (ATS):
+    It tells us approximately how large the average loan is.
+
+    Total exposure = ₹100 Cr
+    Number of loans = 10,000
+
+    Average Ticket Size
+    = ₹100 Cr / 10,000
+    = ₹1 lakh
+
+DTI — Debt-to-Income Ratio:
+    How large are the borrower's debt obligations relative to their income?
+
+    3.19 The analytical questions we'll eventually answer
+
+    By the end of this module, our project should be capable of answering:
+
+    Portfolio
+
+    How large is the loan book?
+
+    Product
+
+    Which products have the highest delinquency?
+
+    Geography
+
+    Where is risk concentrated?
+
+    Customer
+
+    Which borrower segments are deteriorating?
+
+    Credit quality
+
+    How does delinquency vary by credit-score band?
+
+    Origination
+
+    Are recent vintages performing worse?
+
+    Exposure
+
+    Which segments contain the largest amount of risky exposure?
+
+    Concentration
+
+    Is portfolio risk disproportionately concentrated in a particular product/geography/segment?
+
+Exposure:
+    How much money does the bank currently have lent out?
+
+NPA Ratio:
+    NPA ratio measures the proportion of the loan portfolio classified as non-performing under the applicable framework.
+
+Gross NPA:
+    This broadly looks at the total amount of gross non-performing assets relative to the relevant gross advances/exposure base.
+
+Provision:
+    Money recognized/set aside to absorb anticipated credit losses.
+
+The analyst's hierarchy:
+
+    When analyzing portfolio risk, I want you to develop this habit:
+
+    First ask:
+
+    How big is the segment?
+
+    Exposure
+    Then:
+
+    How risky is it?
+
+    Delinquency / NPA / Default
+    Then:
+
+    How much risk does it contribute?
+
+    Risky exposure
+    Then:
+
+    Is the risk getting better or worse?
+
+    Trend / Roll rate / Vintage
+    Finally:
+
+    What might happen next?
+
+    Early warning / PD / Expected Loss
+
+    This sequence is basically the backbone of our entire project.
