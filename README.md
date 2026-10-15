@@ -55,7 +55,7 @@ loan_portfolio_risk_ews/
 ### How to Run
 1. Clone the repository:
    ```bash
-   git clone 
+   git clone https://github.com/lunar2903/loan_portfolio_risk_ews.git
    ```
 2. Navigate to the project directory.
 3. Install the required dependencies:
